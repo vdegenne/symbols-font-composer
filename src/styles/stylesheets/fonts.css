@@ -1,0 +1,6 @@
+@import url(./roboto.css);
+@import url('./symbols.css');
+
+:root {
+	--md-icon-font: 'Material Symbols Rounded';
+}

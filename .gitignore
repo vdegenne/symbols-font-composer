@@ -1,0 +1,7 @@
+node_modules
+.wireit
+dist
+lib
+public/material-symbols.woff2
+src/styles/stylesheets/symbols.css
+.firebase

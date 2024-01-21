@@ -1,0 +1,38 @@
+/* @tailwind base; */
+/* @tailwind utilities; */
+/* @tailwind components; */
+
+[hidden] {
+	display: none;
+}
+
+[invisible] {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.primary {
+	color: var(--md-sys-color-primary);
+}
+
+/* .flex {
+	display: flex;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.centered {
+	text-align: center;
+} */
+
+/* .jp-font {
+	font-family: 'Noto Serif JP';
+	position: relative;
+	top: -2px;
+} */
