@@ -13,8 +13,10 @@ export function showAbout() {
 					margin-bottom: 0;
 				}
 			</style>
-			<md-elevated-card style="padding:8px 18px">
-				<div style="display:flex;align-items:center;justify-content:center;">
+			<md-elevated-card style="padding:12px 18px 8px">
+				<div
+					style="display:flex;align-items:center;justify-content:center;gap:5px;"
+				>
 					UI powered by:
 					<md-icon-button form href="https://material-web.dev/" target="_blank">
 						<md-icon>${SVG_MATERIAL}</md-icon>
@@ -24,7 +26,7 @@ export function showAbout() {
 					</md-icon-button>
 				</div>
 				<md-filled-tonal-button
-					style="margin: 12px 0"
+					style="margin: 8px 0"
 					href="https://github.com/vdegenne/symbols-font-composer"
 					target="_blank"
 					form
