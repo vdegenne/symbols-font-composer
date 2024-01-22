@@ -1,30 +1,25 @@
+import '@lit-labs/virtualizer';
+import {type MdMenuItem} from '@material/web/menu/menu-item.js';
+import {type MdMenu} from '@material/web/menu/menu.js';
 import {type MdFilledTextField} from '@material/web/textfield/filled-text-field.js';
-import {LitElement, nothing, unsafeCSS} from 'lit';
+import {type MdOutlinedTextField} from '@material/web/textfield/outlined-text-field.js';
+import {LitElement} from 'lit';
+import {html} from 'lit-signals-helpers';
 import {withStyles} from 'lit-with-styles';
 import {customElement, query, state} from 'lit/decorators.js';
 import {materialShellLoadingOff} from 'material-shell';
-import {Variant} from 'mwc3-back-helpers/md-icons.js';
-import {constructSymbolsFontStyleSheetUrl} from 'mwc3-back-helpers/stylesheet.js';
-import toast from 'toastit';
-import {html} from 'lit-signals-helpers';
-// import {renderThemeElements} from '../styles/theme-elements.js';
-import {copyToClipboard, downloadFile} from '../utils.js';
-import styles from './app.css?inline';
-import {store} from '../store.js';
-import {type MdOutlinedTextField} from '@material/web/textfield/outlined-text-field.js';
 import {type MdIconName} from 'mwc3-back-helpers/codepoints-maps.js';
-// import {virtualize} from '@lit-labs/virtualizer/virtualize.js';
-import '@lit-labs/virtualizer';
-// const allIconNames = Object.keys(CodePointsMap);
-// console.log(allIconNames.filter((name) => name.length < 3));
-import {MdMenu} from '@material/web/menu/menu.js';
-import {MdMenuItem} from '@material/web/menu/menu-item.js';
 import {
+	constructSymbolsFontStyleSheetUrl,
+	extractSymbolsFontUrlFromStyleSheet,
 	fetchSymbolsFontStyleSheet,
 	replaceSymbolsFontUrlInStyleSheet,
-	extractSymbolsFontUrlFromStyleSheet,
 } from 'mwc3-back-helpers/stylesheet.js';
-import {SVG_GITHUB, SVG_LOGO} from '../assets/assets.js';
+import toast from 'toastit';
+import {SVG_LOGO} from '../assets/assets.js';
+import {store} from '../store.js';
+import {copyToClipboard, downloadFile} from '../utils.js';
+import styles from './app.css?inline';
 
 @customElement('app-shell')
 @withStyles(styles)
