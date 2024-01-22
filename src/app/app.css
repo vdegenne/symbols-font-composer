@@ -3,16 +3,17 @@
 	inset: 0;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 [role='main'] {
 	flex: 1;
-	max-width: 560px;
-	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	gap: 18px;
 	padding: 24px;
+	box-sizing: border-box;
+	width: min(560px, 100vw);
 }
 
 #input-container {
