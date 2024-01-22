@@ -24,7 +24,7 @@ import {
 	replaceSymbolsFontUrlInStyleSheet,
 	extractSymbolsFontUrlFromStyleSheet,
 } from 'mwc3-back-helpers/stylesheet.js';
-import {GITHUB_SVG} from '../assets/assets.js';
+import {SVG_GITHUB, SVG_LOGO} from '../assets/assets.js';
 
 @customElement('app-shell')
 @withStyles(styles)
@@ -159,7 +159,8 @@ export class AppShell extends LitElement {
 							`
 						: html`<span
 								style="font-size:0.75rem;color:var(--md-sys-color-outline-variant);position:absolute;bottom:12px"
-								>Note: you can click on a chip to copy its codepoint</span
+								>Note: you can click on a chip to copy the icon's
+								codepoint</span
 							>`}
 				</md-filled-card>
 
@@ -199,7 +200,14 @@ export class AppShell extends LitElement {
 			</div>
 
 			<footer>
-				<md-icon-button> ${GITHUB_SVG} </md-icon-button>
+				<md-filled-tonal-icon-button
+					@click=${async () => {
+						const {showAbout} = await import('../about-dialog.js');
+						showAbout();
+					}}
+				>
+					${SVG_LOGO}
+				</md-filled-tonal-icon-button>
 			</footer>
 		`;
 	}

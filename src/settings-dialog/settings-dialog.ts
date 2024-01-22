@@ -18,6 +18,7 @@ declare global {
 @withStyles(css`
 	md-outlined-select {
 		margin-top: 32px;
+		width: 100%;
 	}
 `)
 class SettingsDialog extends LitElement {
@@ -40,6 +41,7 @@ class SettingsDialog extends LitElement {
 							const target = event.target as MdOutlinedSelect;
 							store.variant = target.value as Variant;
 						}}
+						supporting-text="variant of the font"
 					>
 						${Object.entries(Variant).map(([variant, value]) => {
 							return html`
