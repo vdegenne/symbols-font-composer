@@ -7,6 +7,7 @@ import {Variant} from 'mwc3-back-helpers/md-icons.js';
 import {store} from '../store.js';
 import {themeStore} from '../styles/styles.js';
 import {renderThemeElements} from '../styles/theme-elements.js';
+import {firstLetterUpperCase} from '../utils.js';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -45,7 +46,9 @@ class SettingsDialog extends LitElement {
 					>
 						${Object.entries(Variant).map(([variant, value]) => {
 							return html`
-								<md-select-option value=${value}>${variant}</md-select-option>
+								<md-select-option value=${value}
+									>${firstLetterUpperCase(value)}</md-select-option
+								>
 							`;
 						})}
 					</md-outlined-select>

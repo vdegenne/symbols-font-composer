@@ -13,7 +13,7 @@ class ThemeStore extends ReactiveController {
 	// When changing the following default value, we also have
 	// to make sure to provide the tokens on start,
 	// and also 'theme-color' meta tag in html header
-	@state() themeColor = '#07ed6b';
+	@state() themeColor = '#edff26';
 
 	async updated(changed: PropertyValues) {
 		if (changed.has('colorMode')) {

@@ -13,29 +13,32 @@ export function showAbout() {
 					margin-bottom: 0;
 				}
 			</style>
-			<div style="display:flex;align-items:center;justify-content:center;">
-				UI powered by:
-				<md-icon-button form href="https://material-web.dev/" target="_blank">
-					<md-icon>${SVG_MATERIAL}</md-icon>
-				</md-icon-button>
-				<md-icon-button form href="https://lit.dev/" target="_blank">
-					<md-icon>${SVG_LIT}</md-icon>
-				</md-icon-button>
-			</div>
-			<md-filled-tonal-button
-				style="margin: 12px 0"
-				href="https://github.com/vdegenne/symbols-font-composer"
-				target="_blank"
-				form
-			>
-				<md-icon slot="icon">${SVG_GITHUB}</md-icon>
-				See source code on GitHub
-			</md-filled-tonal-button>
+			<md-elevated-card style="padding:8px 18px">
+				<div style="display:flex;align-items:center;justify-content:center;">
+					UI powered by:
+					<md-icon-button form href="https://material-web.dev/" target="_blank">
+						<md-icon>${SVG_MATERIAL}</md-icon>
+					</md-icon-button>
+					<md-icon-button form href="https://lit.dev/" target="_blank">
+						<md-icon>${SVG_LIT}</md-icon>
+					</md-icon-button>
+				</div>
+				<md-filled-tonal-button
+					style="margin: 12px 0"
+					href="https://github.com/vdegenne/symbols-font-composer"
+					target="_blank"
+					form
+				>
+					<md-icon slot="icon">${SVG_GITHUB}</md-icon>
+					See source code on GitHub
+				</md-filled-tonal-button>
+			</md-elevated-card>
 			<footer>2024 &copy; MIT License</footer>
 		`,
 		styles: {
-			width: '100%',
+			width: '471px',
 			'--about-dialog-img-size': '170px',
+			'--md-elevated-card-container-shape': '35px',
 		},
 	});
 }

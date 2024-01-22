@@ -1,17 +1,18 @@
 :host {
 	position: absolute;
 	inset: 0;
+	display: flex;
+	flex-direction: column;
 }
 
 [role='main'] {
-	--padding: 24px;
+	flex: 1;
 	max-width: 560px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	gap: 18px;
-	padding: var(--padding);
-	min-height: calc(100vh - var(--padding) * 2);
+	padding: 24px;
 }
 
 #input-container {
@@ -70,8 +71,9 @@ md-chip-set {
 }
 
 footer {
-	position: relative;
-	bottom: 48px;
-	display: flex;
-	justify-content: center;
+	padding: 12px;
+	text-align: center;
+	--md-filled-tonal-icon-button-icon-size: 38px;
+	--md-filled-tonal-icon-button-container-height: 48px;
+	--md-filled-tonal-icon-button-container-width: 48px;
 }
