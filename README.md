@@ -1,16 +1,19 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/vdegenne/symbols-font-composer/main/public/logo.svg" width=120><br>
+<img src="https://raw.githubusercontent.com/vdegenne/symbols-font-composer/main/public/logo.svg" width=120>  
+  
 <b>symbols-font-composer PWA</b>
-</div>
+</div><br>
 
 `symbols-font-composer` PWA can be used to compose Material Symbols font, only containing icons you decide to include, which minimize the final icon font file size your application serve.
 
 ✨ If you want to automate this process instead, the following plugins can also be used:
 
 - [rollup-plugin-md-icon](https://github.com/vdegenne/rollup-plugin-md-icon)
-- [vite-plugin-md-icon](https://github.com/vdegenne/vite-plugin-md-icon)
+- [vite-plugin-md-icon](https://github.com/vdegenne/vite-plugin-md-icon)  
 
-## About PWA
+---
+
+## About this PWA
 
 This PWA makes use of the following libraries:
 
