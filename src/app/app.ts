@@ -288,5 +288,3 @@ declare global {
 		'app-shell': AppShell;
 	}
 }
-
-// export const app = (window.app = new AppShell());

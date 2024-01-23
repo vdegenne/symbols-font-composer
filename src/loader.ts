@@ -8,8 +8,6 @@ import './material.js';
  * Content
  */
 import('./app/app.js');
-// import {app} from './app/app.js';
-// document.querySelector('material-shell').appendChild(app);
 
 /**
  * Fonts & Styles

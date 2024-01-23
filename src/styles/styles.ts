@@ -10,9 +10,12 @@ setBaseStyles(sharedStyles);
 @saveToLocalStorage('sfc:theme')
 class ThemeStore extends ReactiveController {
 	@state() colorMode = ColorMode.SYSTEM;
-	// When changing the following default value, we also have
-	// to make sure to provide the tokens on start,
-	// and also 'theme-color' meta tag in html header
+	/**
+	 * When changing the following default value, we also have
+	 * to make sure to provide the tokens on start,
+	 * and also 'theme-color' meta tag in html header.
+	 * Material default theme seed is '#6750A4'
+	 */
 	@state() themeColor = '#edff26';
 
 	async updated(changed: PropertyValues) {
