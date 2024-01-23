@@ -9,10 +9,9 @@
 import '@material/web/all.js';
 import {MdOutlinedField} from '@material/web/field/outlined-field.js';
 import {css} from 'lit';
-import {DEV} from './constants.js';
 
-// This is used during development to see what elements are used in the page.
-// if (DEV) {
+// Prints all material elements available in the page
+// This is only used for demonstration purpose here.
 setTimeout(() => {
 	import('mwc3-back-helpers/browser.js').then(({getAvailableElements}) => {
 		console.log(
@@ -21,13 +20,6 @@ setTimeout(() => {
 		);
 	});
 }, 3000);
-// const {MdElementsImportsMap} = await import(
-// 	'mwc3-back-helpers/md-elements-imports-map.js'
-// );
-// console.log(
-// 	Object.keys(MdElementsImportsMap).filter((name) => name.includes('field')),
-// );
-// }
 
 // MdDialog.shadowRootOptions.delegatesFocus = false;
 

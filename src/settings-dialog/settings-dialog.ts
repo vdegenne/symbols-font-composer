@@ -44,7 +44,7 @@ class SettingsDialog extends LitElement {
 						}}
 						supporting-text="variant of the font"
 					>
-						${Object.entries(Variant).map(([variant, value]) => {
+						${Object.entries(Variant).map(([_variant, value]) => {
 							return html`
 								<md-select-option value=${value}
 									>${firstLetterUpperCase(value)}</md-select-option

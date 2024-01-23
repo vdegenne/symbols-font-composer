@@ -1,8 +1,10 @@
 import '@lit-labs/virtualizer';
-import {type MdMenuItem} from '@material/web/menu/menu-item.js';
-import {type MdMenu} from '@material/web/menu/menu.js';
-import {type MdFilledTextField} from '@material/web/textfield/filled-text-field.js';
-import {type MdOutlinedTextField} from '@material/web/textfield/outlined-text-field.js';
+import type {
+	MdMenu,
+	MdMenuItem,
+	MdFilledTextField,
+	MdOutlinedTextField,
+} from '@material/web/all.js';
 import {html, LitElement} from 'lit';
 import {withStyles} from 'lit-with-styles';
 import {customElement, query, state} from 'lit/decorators.js';
