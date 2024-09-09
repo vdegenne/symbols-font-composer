@@ -122,7 +122,7 @@ export class AppShell extends LitElement {
 									@click=${(event: Event) => {
 										event.preventDefault();
 										try {
-											copyToClipboard(`&#${codepoints[icon]};`);
+											copyToClipboard(`&#x${codepoints[icon]};`);
 											toast('Codepoint copied to clipboard!');
 										} catch {
 											// non-https context, ignore
